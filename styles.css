@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+}
+main{
+   background-color: hsl(225, 100%, 98%);
+   position: absolute;
+   border-radius: 10px;
+   overflow: hidden;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 450px;
+   text-align: center;
+}
+
+h1{
+    padding-block: 1rem;
+    text-align: center;
+    font-size: 32px;
+    font-family: 900;
+    color: hsl(223, 47%, 23%);
+}
+.p{
+    text-align: center;
+    padding-inline: 1rem;
+    padding-block-end: 1.5rem;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(225, 100%, 94%);
+    height: 100px;
+    margin-inline: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.left{
+    padding-left: .2rem;
+    display: flex;
+}
+.left .plan{
+    padding-left: 10px;   
+}
+.plan-text{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+a.change{
+    padding-right: .5rem;
+    text-decoration: underline;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+}
+a.change:active{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%,.8);
+}
+.num{
+    color: hsl(224, 23%, 55%);
+}
+
+.btn{
+   width: 90%;
+   height: 3rem;
+   border-radius: 10px;
+   background: hsl(245, 75%, 52%);
+   color: hsl(225, 100%, 98%);
+   margin-bottom: 1rem;
+   font-weight: 700;
+   box-shadow: 5px 10px 20px 2px hsl(224, 23%, 55%);
+}
+.btn:active{
+    background: hsla(245, 75%, 52%, .8);
+}
+.cancel{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.cancel:active{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.last{
+    height: 50px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+.attribution{
+    margin-top: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+     background:  hsl(225, 100%, 94%);;
+   }
+    main{ 
+       max-width: 80%; 
+    }
+    h1{
+        font-size: 17px;
+        margin: .5px 0;
+    }
+    .p{
+        margin: 1px 0;
+    }
+    .one{
+        height: 80px;
+    }
+    
+}
